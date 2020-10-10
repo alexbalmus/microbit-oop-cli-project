@@ -26,7 +26,8 @@ basic.showLeds(`
 basic.pause(500);
 basic.clearScreen();
 
-function onForever() {
+function onForever() 
+{
     basic.clearScreen();
     basic.showString("" + hello.getMessage());
 
