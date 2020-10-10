@@ -1,11 +1,14 @@
-class Greeting {
+class Greeting 
+{
     message: string;
 
-    constructor(message: string) {
+    constructor(message: string) 
+    {
         this.message = message;
     }
     
-    public getMessage(): string {
+    public getMessage(): string 
+    {
         return this.message;
     }
 }
@@ -23,7 +26,7 @@ basic.showLeds(`
 basic.pause(500);
 basic.clearScreen();
 
-basic.forever(function onForever() {
+function onForever() {
     basic.clearScreen();
     basic.showString("" + hello.getMessage());
 
@@ -67,4 +70,6 @@ basic.forever(function onForever() {
         `);
     
     basic.clearScreen();
-})
+}
+
+basic.forever(onForever);
