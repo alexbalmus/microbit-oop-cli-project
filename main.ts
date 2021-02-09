@@ -74,3 +74,22 @@ function onForever()
 }
 
 basic.forever(onForever);
+
+
+// TODO: verificare supraîncărcare a funcțiilor (oficial nesuportată)
+// class TestClass {
+//     someMethod(stringParameter: string): void;
+//     someMethod(numberParameter: number, stringParameter: string): void;
+
+//     someMethod(stringOrNumberParameter: any, stringParameter?: string): void {
+//         if (stringOrNumberParameter && typeof stringOrNumberParameter == "number")
+//             console.log("Variant #2: numberParameter = " + stringOrNumberParameter + ", stringParameter = " + stringParameter);
+//         else
+//             console.log("Variant #1: stringParameter = " + stringOrNumberParameter);
+//     }
+// }
+
+// let inst = new TestClass();
+
+// inst.someMethod("bla");
+// inst.someMethod(5, "blu");
